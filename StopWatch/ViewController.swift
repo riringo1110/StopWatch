@@ -29,17 +29,17 @@ class ViewController: UIViewController {
         
     }
    
-    @IBOutlet var label1: UILabel!
+    @IBOutlet var hanteiLabel: UILabel!
     
     func hantei(){
-        if count>=9.80,count<=10.20{
-            label1.text = "PERFECT!!"
-        if count>=9.70,count<=10.30{
-            label1.text = "GREAT!"
-        if count>=9.50,count<=10.50{
-            label1.text = "GOOD!"
+        if count>9.80,count<10.20{
+            hanteiLabel.text = "PERFECT!!"
+        if count>9.70,count<10.30{
+            hanteiLabel.text = "GREAT!"
+        if count>9.50,count<10.50{
+            hanteiLabel.text = "GOOD!"
         }else{
-            label1.text = "BAD"
+            hanteiLabel.text = "BAD"
         }
     }
 }
